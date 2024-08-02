@@ -3,24 +3,30 @@ def add(x, y):
 
 
 def subtract(x, y):
-    pass
+    return x - y
 
 
 def divide(x, y):
-    pass
+    if (y == 0):
+        return "Invalid value for denominator, cant't divide by 0!"
+    else:
+        return x / y
 
 
 def multiply(x, y):
-    pass
+    return x * y
 
 
 def square(x):
-    pass
+    return x * x
 
 
 def power(x, y):
-    pass
+    return x ** y
 
 
 def sqrt(x):
-    pass
+    if (x < 0):
+        return "Invalid value; you can’t take the square root of a negative number!"
+    else:
+        return x ** 0.5
